@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.time.LocalDate;
 
 public class HomeWork {
@@ -52,12 +54,13 @@ public class HomeWork {
         if (isLeapYear(year)) {
             System.out.println(year + "Год является високостным");
         } else {
-            System.out.println(year + "Год не является високостным");
+            System.out.println(year + "Год не является/ високостным");
         }
     }
 
     private static boolean isLeapYear(int year) {
         return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+
     }
 }
 
